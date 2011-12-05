@@ -18,6 +18,9 @@ group :test do
   gem 'turn', '0.8.2', :require => false
 end
 
+# https://github.com/NoamB/sorcery
+gem 'sorcery'
+
 # https://github.com/thomas-mcdonald/bootstrap-sass
 gem 'bootstrap-sass'
 
