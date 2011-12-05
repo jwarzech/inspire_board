@@ -17,3 +17,6 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
+
+# https://github.com/thomas-mcdonald/bootstrap-sass
+gem 'bootstrap-sass'
