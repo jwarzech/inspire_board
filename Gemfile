@@ -25,4 +25,7 @@ gem 'sorcery'
 gem 'bootstrap-sass'
 
 # https://github.com/meleyal/backbone-on-rails
-gem "backbone-on-rails"
+gem 'backbone-on-rails'
+
+# https://github.com/archiloque/rest-client
+gem 'rest-client'
