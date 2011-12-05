@@ -20,3 +20,6 @@ end
 
 # https://github.com/thomas-mcdonald/bootstrap-sass
 gem 'bootstrap-sass'
+
+# https://github.com/meleyal/backbone-on-rails
+gem "backbone-on-rails"
