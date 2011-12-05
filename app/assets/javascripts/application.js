@@ -3,6 +3,7 @@
 //= require bootstrap
 //= require underscore
 //= require backbone
+//= require backbone.authtokenadapter
 
 //= require inspire_board
 
