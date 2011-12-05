@@ -1,0 +1,26 @@
+<%= form_tag sessions_path, :class => "form-stacked" do %>
+  <fieldset>
+    <legend>Existing Account?</legend>
+     <% unless flash.empty? %>
+       <% flash.each do |k,v| %>
+        <div class="alert-message error"><%= v %></div>
+        <% end %>
+    <% end %>
+    <div class="clearfix">
+      <%= label_tag :username %>
+      <div class="input">
+        <%= text_field_tag :username, params[:username] %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <%= label_tag :password %>
+      <div class="input">
+        <%= password_field_tag :password %>
+      </div>
+    </div>
+    <div class="clearfix remember-me">
+      <%= check_box_tag :remember_me, 1, params[:remember_me] %> <b>Remember Me</b>
+    </div>
+  </fieldset>
+  <div class="actions"><%= submit_tag "Log in", :class => 'btn primary' %></div>
+<% end %>
