@@ -1,0 +1,1 @@
+InspireBoard.Models.DribbbleShot = Backbone.Model.extend({});
