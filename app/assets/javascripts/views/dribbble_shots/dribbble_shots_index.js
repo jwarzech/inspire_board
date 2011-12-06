@@ -6,10 +6,7 @@ InspireBoard.Views.DribbbleShotsIndex = Backbone.View.extend({
   },
   
   render: function() {
-    
-    console.log(this.collection.length);
-    
-    $(this.el).html(JST['dribbble_shots/index']({ shots: this.collection }));
+    $(this.el).html(JST['dribbble_shots/index']());
        
     var self = this;
     this.collection.each(function(shot) {

@@ -1,15 +1,8 @@
 <div class="container-fluid">
   <div class="sidebar">
   </div>
-  <div id="pictures" class="content">
-    <%= yield %>
+  <div class="content">
   </div>
 </div>
 
-<% content_for :javascript do %>
-  <%= javascript_tag do %>
-    $(function() {
-      InspireBoard.init();
-    });
-  <% end %>
-<% end %>
+<%= yield %>

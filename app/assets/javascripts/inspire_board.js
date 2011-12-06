@@ -3,10 +3,13 @@ window.InspireBoard = {
   Collections: {},
   Views: {},
   Routers: {},
-  init: function() {
-    this.dribbble_shots = new InspireBoard.Collections.DribbbleShots();
-    this.dribbble_shots.fetch();
-    new InspireBoard.Routers.DribbbleShots(this.dribbble_shots);
+  init: function(pictures) {
+    var userPictures = new InspireBoard.Collections.Pictures(pictures);
+    var dribbbleShots = new InspireBoard.Collections.DribbbleShots();
+    dribbbleShots.fetch();
+    
+    new InspireBoard.Routers.Pictures(dribbbleShots, userPictures);
+    
     Backbone.history.start();
   }
 };
