@@ -1,0 +1,3 @@
+= Inspire Board
+
+A sample application for learning backbone.js.  Inspire Board lets you explore images from dribbble.com and save your favorites for later inspiration.
