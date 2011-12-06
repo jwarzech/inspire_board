@@ -7,10 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>Inspire Board</h1>
+  <div id="header">
+    <div id="logo">
+      <h2>Inspire Board</h2>
+    </div>
+  </div>
   <%= render 'content' %>
-  
   <%= yield :javascript %>
 </body>
 </html>
-

@@ -1,7 +1,45 @@
 // Place all the styles related to the Pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//.container-fluid {
+//  margin-left: 0px;
+//}
+
+.sidebar {
+  background: #333333;
+  text-align: center;
+  .media-grid {
+    margin-left: 5px;
+  }
+  
+  img {
+    margin-top: 15px;
+    border: 5px solid #f0f0f0;
+    width: 80%;
+    
+//    box-shadow: 2px 2px 4px #888;
+  }
+}
+
 #pictures {
-  min-height: 1000px;
+  padding: 20px 10px;
+  min-height: 800px;
   background: #ccc;
+  background: image-url("corkboard.jpg");
+  border: 1px solid #888;
+  box-shadow: 1px 1px 1px #888;
+  
+  a {
+    text-decoration: none;
+    border-style: none;
+  }
+}
+
+.picture {
+  margin: 20px;
+    
+  .thumbnail {
+    box-shadow: 2px 2px 2px #333;
+  }
 }
