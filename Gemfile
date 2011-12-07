@@ -9,13 +9,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
-end
-
-group :test do
-  # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
+  gem "rspec-rails"
+  gem 'shoulda-matchers'
+  gem "ZenTest"
+  gem 'jasminerice'
 end
 
 # https://github.com/NoamB/sorcery
