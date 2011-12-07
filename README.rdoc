@@ -1,3 +1,5 @@
 = Inspire Board
 
 A sample application for learning backbone.js.  Inspire Board lets you explore images from dribbble.com and save your favorites for later inspiration.
+
+The master branch has all of the backbone.js functionality written in javascript.  The 'coffeescript' branch has it rewritten in coffeescript.
